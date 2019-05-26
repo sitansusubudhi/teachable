@@ -9,6 +9,14 @@
 
 # print(two_sum([10,5,7,3], 7))
 
+# This would take O(N^2). 
+
+# Another way is to use a set to remember the numbers we've seen so far. 
+# Then for a given number, we can check if there is another number that, if added, would sum to k. 
+# This would be O(N) since lookups of sets are O(1) each.
+
+
+
 # O(n)
 # def two_sum(lst, k):
 #     seen = set()
@@ -19,6 +27,11 @@
 #     return False
 
 # print(two_sum([10,5,7,3], 17))
+
+
+# Yet another solution involves sorting the list. We can then iterate through the list 
+# and run a binary search on K - lst[i]. 
+# Since we run binary search on N elements, this would take O(N log N) with O(1) space.
 
 from bisect import bisect_left
 
