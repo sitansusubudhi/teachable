@@ -1,4 +1,5 @@
 # Brute Force
+# O(n^2)
 # def two_sum(lst, k):
 #     for i in range(len(lst)):
 #         for j in range(len(lst)):
@@ -8,6 +9,7 @@
 
 # print(two_sum([10,5,7,3], 7))
 
+# O(n)
 # def two_sum(lst, k):
 #     seen = set()
 #     for num in lst:
@@ -21,6 +23,7 @@
 from bisect import bisect_left
 
 
+# O(nlogn)
 def two_sum(lst, K):
     lst.sort()
 
